@@ -11,6 +11,48 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Vite + React</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@900&display=swap');
+      
+      /* Add the converted Tailwind CSS here */
+      .cta {
+        @apply relative m-auto p-[19px_22px] transition-all duration-200 ease-in-out;
+      }
+
+      .cta:before {
+        content: '';
+        @apply absolute top-0 left-0 block rounded-full transition-all duration-300 ease-in-out;
+        width: 56px;
+        height: 56px;
+        background-color: #D3E97A;
+      }
+
+      .cta:hover:before {
+        width: 100%;
+        background-color: #D3E97A;
+      }
+
+      .cta span {
+        @apply relative text-[16px] leading-[18px] font-bold tracking-[0.25em] uppercase;
+        font-family: 'Avenir', sans-serif;
+      }
+
+      .cta svg {
+        @apply relative ml-2 stroke-[2px] transition-transform duration-300 ease-in-out;
+        transform: translateX(-5px);
+        stroke: #111;
+      }
+
+      .cta:hover svg {
+        transform: translateX(0);
+      }
+
+      .cta:active {
+        @apply scale-[0.96];
+      }
+    </style>
+
+
   </head>
   <body class="bg-[#0A0A0A]">
     <div id="root"></div>

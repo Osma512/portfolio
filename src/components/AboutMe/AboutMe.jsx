@@ -11,17 +11,17 @@ const AboutMe = () => {
                 About me
             </p>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-start">
+        <div className="w-full md:w-1/2 flex flex-col gap-6 justify-start items-start 2xl:max-w-screen-lg">
             <div className="flex flex-col gap-2 md:gap-3">
-                <p className="text-lg md:text-[32px] leading-[140%] font-medium w-full md:w-fit" style={{fontFamily: "Manrope, sans-serif"}}>
+                <p className="text-lg md:text-[32px] leading-[140%] font-medium w-full md:w-fit text-left" style={{fontFamily: "Manrope, sans-serif"}}>
                   A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product
                 </p>
-                <p className="text-sm md:text-lg leading-[150%] text-[#C7C7C7]" style={{fontFamily: "Manrope, sans-serif"}}>
+                <p className="text-sm md:text-lg leading-[150%] text-[#C7C7C7] text-pretty" style={{fontFamily: "Manrope, sans-serif"}}>
                   As a result-oriented Web Developer, I specialize in building and managing websites and web applications that drive product success. With a strong foundation in front-end and back-end technologies, I create seamless, user-centric digital experiences that align with business goals. My passion for coding is matched by my commitment to continuous learning, allowing me to stay ahead of industry trends and implement innovative solutions. I thrive in collaborative environments, working closely with teams to deliver high-quality, scalable products. Whether it&apos;s optimizing site performance or crafting custom features, I am dedicated to turning ideas into impactful, functional realities.
                 </p>
             </div>
-            <div className="contact flex flex-col sm:flex-row gap-4">
-                <a style={{fontFamily: "Manrope, sans-serif"}} href=""
+            <div className="contact flex flex-col sm:flex-row gap-4 mt-8">
+                <a style={{fontFamily: "Manrope, sans-serif"}} href="1Suifyan_Chishty_Resume.pdf"
                   download="Sufiyan_Chishty.pdf"
                    className="text-black flex gap-2 justify-center items-center bg-[#D3E97A] px-5 py-3 md:py-4 rounded-full font-bold uppercase hover:bg-black hover:text-[#D3E97A] hover:border hover:border-[#D3E97A] animate-bounce">
                     Download my resume
@@ -39,7 +39,7 @@ const AboutMe = () => {
         </div>
     </div>
 
-    <div className="py-8 text-white border-y mt-3">
+    <div className="py-8 text-white mt-3">
         <h2 className="uppercase text-4xl md:text-[56px] font-bold mb-8" style={{fontFamily: "Bebas Neue, sans-serif"}}>
           Education
         </h2>
@@ -92,13 +92,13 @@ const AboutMe = () => {
         <div style={{fontFamily: "Manrope, sans-serif"}} className="w-full md:w-1/2 flex flex-col gap-8">
           
           <div>
-            <p className="text-sm md:text-base lg:text-lg leading-relaxed text-[#C7C7C7]">
+            <p className="text-sm md:text-base lg:text-lg leading-relaxed text-[#C7C7C7] text-left 2xl:max-w-[900px]  ">
               Dedicated to continuous learning and skill enhancement, with a focus on mastering diverse technologies and innovative solutions to drive success.
             </p>
           </div>
       
          
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 2xl:max-w-lg">
             <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
               HTML
             </p>
@@ -122,6 +122,46 @@ const AboutMe = () => {
             </p>
             <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
               Shopify
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div className="flex flex-col md:flex-row gap-6 md:gap-12 mt-16  ">
+       
+        <div className="w-full md:w-1/2">
+          <p
+            className="uppercase text-4xl md:text-5xl lg:text-[76px] text-white leading-tight"
+            style={{fontFamily: "Bebas Neue, sans-serif"}}
+          >
+            Tools And Technologies
+          </p>
+        </div>
+      
+        
+        <div style={{fontFamily: "Manrope, sans-serif"}} className="w-full md:w-1/2 flex flex-col gap-8">
+          
+          
+      
+         
+          <div className="flex flex-wrap gap-4 2xl:max-w-lg">
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              GIT
+            </p>
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              Netlify
+            </p>
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              Vercel
+            </p>
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              GitHub
+            </p>
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              Vscode
+            </p>
+            <p className="border border-[#484848] font-bold leading-tight w-fit px-6 py-3 rounded-full text-center">
+              Figma
             </p>
           </div>
         </div>

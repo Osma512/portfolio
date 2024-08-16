@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const isAboutPage = location.pathname === "/about";
+
   // State to control the mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -17,14 +20,22 @@ const Header = () => {
     >
       <nav className="flex justify-between items-center w-full px-6 py-4 md:px-[60px] md:py-[24px]">
         <Link to="/">
-          <h1 className="text-2xl md:text-3xl">Sufiyan Chishty</h1>
+          <h1 className="text-2xl md:text-3xl 2xl:text-5xl">Sufiyan Chishty</h1>
         </Link>
         <div className="hidden md:block">
-          <ul className="flex gap-4 md:gap-8 text-lg md:text-[18px]">
-            <Link to="/">
-              <li className="hover:underline hover:text-[#D3E97A]">Work</li>
-            </Link>
-            <Link to="#about">
+          <ul className="flex gap-4 md:gap-8 text-lg md:text-[18px] 2xl:text-2xl">
+          {
+              isAboutPage ? (<Link to="/">
+                <li className="hover:underline hover:text-[#D3E97A]">Home</li>
+              </Link>) : (
+                <>
+                <a href="#projects">
+                <li className="hover:underline hover:text-[#D3E97A]">Projects</li>
+                </a>
+              </>
+            )
+            }
+            <Link to="about">
               <li className="hover:underline hover:text-[#D3E97A]">About</li>
             </Link>
             <a href="#contact">
@@ -50,12 +61,12 @@ const Header = () => {
             <Link to="/" onClick={toggleMobileMenu}>
               <li className="hover:underline hover:text-[#D3E97A]">Work</li>
             </Link>
-            <Link to="#about" onClick={toggleMobileMenu}>
+            <Link to="about" >
               <li className="hover:underline hover:text-[#D3E97A]">About</li>
             </Link>
-            <Link to="#contact" onClick={toggleMobileMenu}>
+            <a href="#contact">
               <li className="hover:underline hover:text-[#D3E97A]">Contact</li>
-            </Link>
+            </a>
           </ul>
         </div>
       )}

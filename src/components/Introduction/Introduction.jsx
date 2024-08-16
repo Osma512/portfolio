@@ -3,7 +3,7 @@
 const Introduction = () => {
   return (
     <section
-            className="intro flex flex-col md:flex-row px-6 md:px-[70px] border-b-[1px] xl:px-[400px] border-slate-200"
+            className="intro flex flex-col md:flex-row px-6 md:px-[70px] border-b-[1px] 2xl:px-[400px] border-slate-200"
         >
             <div
                 className="w-full md:w-1/2 h-auto  flex flex-col justify-center items-start gap-6 md:gap-[40px] py-10 md:py-0"
@@ -50,14 +50,14 @@ const Introduction = () => {
                 </div>
             </div>
             <div
-                className="w-full md:w-1/2 h-auto flex justify-end items-end mb-8"
+                className="w-full md:w-1/2 h-auto flex xl:justify-end xl:items-end mb-8"
             >
                 <div
                     className="relative w-full max-w-xs md:max-w-lg h-[300px] md:h-[700px] bg-[#C7C7C7] rounded-lg mt-10 md:mt-0 xl:h-[700px] xl:w-[1224px]"
                 >
                     <img
-                        className="absolute top-[20px] md:top-[55px] mix-blend-multiply w-full h-full object-cover"
-                        src=""
+                        className="absolute top-[0px] md:top-[0px] mix-blend-multiply w-full h-full object-cover"
+                        src="images/me.jpeg"
                     alt="sufiyan chishty"
                     loading="lazy"/>
                 </div>
